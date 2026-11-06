@@ -28,10 +28,19 @@ Completed checks on the local HTTP preview, November 5, 2026:
 - Completing Short quiz moved it into Completed with the correct session-completion label.
 - Browser console contained no errors or warnings during these checks.
 
-These tests are AI-performed checks of the separate public-site copy, not retroactive student results for Chapter 10. Hosted HTTPS behavior will be verified after deployment.
+These tests are AI-performed checks of the separate public-site copy, not retroactive student results for Chapter 10. Hosted checks completed at https://zsaez.github.io/assignment-organizer-demo/ on November 5, 2026:
+
+- GitHub Pages deployment succeeded for commit 6f1f35f3be94ef872b68680144382fcbd843e03e.
+- Pages settings show Enforce HTTPS enabled and required for the default github.io domain.
+- The HTTPS page rendered its independent-demo notice, fictional assignments, and deadline warnings.
+- Expanded assignment details worked; reversed estimate 40/20 was rejected while the original range remained.
+- Completion moved Short quiz to Completed, undo returned it to Upcoming, and By class grouped assignments correctly.
+- No browser console errors or warnings were observed during these hosted checks.
+
+These checks do not certify all possible inputs or devices.
 
 ## Limits
 
-The hosting provider still receives normal HTTP requests when someone visits the site. No claim is made that GitHub records no visitor metadata. A meta-delivered CSP cannot enforce every HTTP-header-only protection, including frame-ancestors; clickjacking prevention is therefore not asserted. Hosting configuration and HTTPS must be checked after publication. Changing the hashed script or stylesheet requires regenerating the corresponding CSP hash. This review does not establish security for future real course access, accounts, file uploads, or AI integrations.
+The hosting provider still receives normal HTTP requests when someone visits the site. No claim is made that GitHub records no visitor metadata. A meta-delivered CSP cannot enforce every HTTP-header-only protection, including frame-ancestors; clickjacking prevention is therefore not asserted. Hosting configuration and HTTPS were checked after publication as described above. Changing the hashed script or stylesheet requires regenerating the corresponding CSP hash. This review does not establish security for future real course access, accounts, file uploads, or AI integrations.
 
 References: https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP and https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site

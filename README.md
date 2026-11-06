@@ -4,7 +4,9 @@ Interactive static website made with AI assistance for a class website assignmen
 
 ## Try it
 
-Open index.html or visit the GitHub Pages URL once published. Switch date/class views, expand assignments, mark them complete and undo completion, and edit estimated work-time ranges. The testing area switches fictional failure and recovery scenarios.
+Live site: https://zsaez.github.io/assignment-organizer-demo/
+
+Open index.html locally or visit the live link. Switch date/class views, expand assignments, mark them complete and undo completion, and edit estimated work-time ranges. The testing area switches fictional failure and recovery scenarios.
 
 ## Limits
 
