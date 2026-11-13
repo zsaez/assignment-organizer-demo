@@ -1,0 +1,49 @@
+/* Set the default font, text color, and page background. */
+:root{font-family:system-ui,sans-serif;color:#14273b;background:#f2f5fa}
+*{box-sizing:border-box}
+body{margin:0}
+main{max-width:850px;margin:auto;padding:28px 20px 125px}
+h1{font-size:30px;margin:8px 0}
+h2{font-size:20px}
+.muted{color:#53657b;font-size:14px}
+.banner{background:#e4ecfa;padding:12px;border-radius:12px}
+button,select,input{font:inherit}
+button,select{padding:10px 14px;border:1px solid #b6c5d8;border-radius:10px;background:white;color:#173857;cursor:pointer}
+button:hover{background:#e9f0fa}
+:focus-visible{outline:3px solid #187bc4;outline-offset:3px}
+/* Arrange the filters in a row that can wrap on small screens. */
+.toolbar{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:24px 0 16px}
+.active{background:#163f70;color:white}
+/* Give each assignment a card with a colored left border. */
+.card{background:white;border:1px solid #d9e2ee;border-left:5px solid #2876a2;border-radius:14px;margin:12px 0;padding:16px;box-shadow:0 3px 12px #17385708}
+.card.courseb{border-left-color:#875bc1}
+.cardtop{display:flex;gap:12px;align-items:flex-start}
+.cardtop input{width:23px;height:23px;flex:none}
+.cardtitle{flex:1;min-width:0;overflow-wrap:anywhere}
+summary{cursor:pointer;list-style:none}
+summary:after{content:'Show details ▾';display:block;color:#386082;font-size:13px;margin-top:8px}
+details[open] summary:after{content:'Hide details ▴'}
+.due{display:block;margin-top:7px}
+.overdue{display:inline-block;background:#ffe6e5;color:#a51020;font-weight:750;padding:7px 10px;border-radius:8px;margin-top:9px}
+.detail{border-top:1px solid #e3eaf2;margin-top:14px;padding-top:14px}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.warning{padding:12px;background:#fff0cc;border:1px solid #e2bd58;border-radius:10px;margin:10px 0}
+.source{padding:12px;background:white;border-radius:10px;margin:8px 0;font-size:14px}
+.notices{font-size:14px}
+/* Keep the navigation visible at the bottom of the window. */
+nav{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #d9e2ee;display:flex;justify-content:center;gap:8px;padding:14px 8px;z-index:4}
+nav button{min-width:65px}
+input[type=number],input[type=text]{width:100px;padding:8px;border:1px solid #8d9eb1;border-radius:6px}
+.empty{text-align:center;padding:45px 15px;background:white;border-radius:14px}
+.test{margin-top:35px;border-top:1px dashed #9bacbf;padding-top:15px}
+.test summary{font-size:13px;color:#64748b}
+.test summary:after{content:''}
+#message{padding:12px;background:#e3eefb;border-radius:10px;margin:10px 0}
+small{display:block}
+ @media(max-width:480px){main{padding:18px 12px 125px}
+h1{font-size:25px}
+nav{gap:4px}
+nav button{padding:10px 7px;font-size:13px}
+.card{padding:12px}
+}
+
