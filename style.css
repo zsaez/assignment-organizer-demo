@@ -1,3 +1,5 @@
+/* Rules that start with a dot match elements with that class in the HTML.
+   The media query at the end adjusts the layout for narrow screens. */
 /* Set the default font, text color, and page background. */
 :root{font-family:system-ui,sans-serif;color:#14273b;background:#f2f5fa}
 *{box-sizing:border-box}
